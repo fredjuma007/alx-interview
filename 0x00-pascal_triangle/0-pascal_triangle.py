@@ -7,6 +7,8 @@ representing the Pascal's triangle of n
 
 def pascal_triangle(n):
     """
+    ALGORITHM
+    
     Creates a list of lists of integers representing Pascal's triangle
 
     parameters:
