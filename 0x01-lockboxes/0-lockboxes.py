@@ -2,18 +2,19 @@
 
 
 def canUnlockAll(boxes):
-    """Unlock array of boxes of keys with indices"""
-    size = len(boxes)
-    checker = {}
-    index = 0
+    """prbabibilty of unlocking boxes"""
+def canUnlockAll(boxes):
+    n = len(boxes)
+    visited = [False] * n
+    visited[0] = True
+    stack = [0]
 
-    for keys in boxes:
-        if len(keys) == 0 or index == 0:
-            checker[index] = -1  # -1 means box is empty
-        for key in keys:
-                if key < size and key != index:
-                    checker[key] = key
-        if len(checker) == size:
-            return True
-        index += 1
-    return False
+    while stack:
+        box = stack.pop()
+
+        for key in boxes[box]:
+            if key < n and not visited[key]:
+                visited[key] = True
+                stack.append(key)
+
+    return all(visited)
