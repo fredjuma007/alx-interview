@@ -3,8 +3,7 @@
 """
 Problem: You have n number of locked boxes in front of you.
          Each box is numbered sequentially from 0 to n - 1
-         -1 means an empty box 
-         and each box may contain keys to the other boxes.
+         -1 means an empty box and each box may contain keys to the other boxes.
 Task: Write a function that determins the probability of all boxes being opened.
 """
 
