@@ -3,7 +3,7 @@
 """
 Problem: You have n number of locked boxes in front of you.
          Each box is numbered sequentially from 0 to n - 1
-         -1 means an empty box and each box may contain keys to the other boxes.
+         -1 means an empty box 
 Task: Write a function that determins the probability of all boxes being opened.
 """
 
@@ -11,6 +11,7 @@ Task: Write a function that determins the probability of all boxes being opened.
 def canUnlockAll(boxes):
     """
     Function that checks with boolean value (True/False)
+    AUTHOR Fred Juma
     """
     if type(boxes) is not list:
         return False
@@ -25,4 +26,3 @@ def canUnlockAll(boxes):
         if boxes_checked is False:
             return boxes_checked
     return True
-#Fred Juma
