@@ -2,7 +2,7 @@
 
 
 def canUnlockAll(boxes):
-    """probapility"""
+    """probability"""
     size = len(boxes)
     checker = {}
     index = 0
