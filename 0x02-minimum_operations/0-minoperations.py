@@ -3,7 +3,7 @@
 calculates the fewest number of operarions needed
 to result exactly n H characters in the file
 
-AUTHER: Fred Juma
+AUTHOR: Fred Juma
 """
 from sys import setrecursionlimit
 
